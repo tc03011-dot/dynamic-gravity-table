@@ -76,7 +76,11 @@ export function createProfileCup(table, params, { variant = 'smooth', storedProf
   geometry.setIndex(indices)
   const material = new MeshStandardMaterial({ color: variant === 'wavy' ? 0x89bdb9 : 0xe9cda6, roughness: 0.45, metalness: 0, side: DoubleSide })
   if (variant === 'bowl') material.color.setHex(0xc6a3ce)
-  if (color !== null) material.color.set(color)
+  material.color.setHSL(
+  Math.random(),               // 랜덤 색상
+  0.55 + Math.random() * 0.2,   // 채도
+  0.5 + Math.random() * 0.15,   // 밝기
+)
   const mesh = new Mesh(geometry, material)
   root.add(mesh)
   const profileLine = new Line(new BufferGeometry().setFromPoints(profile), new LineBasicMaterial({ color: 0x5ce8d6, depthTest: false }))
