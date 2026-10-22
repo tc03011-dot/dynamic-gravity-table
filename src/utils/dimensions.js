@@ -1,9 +1,9 @@
 // SI units. Most dimensions preserve the previous 6 m layout at 0.8 / 6 scale.
 export const SCALE = 0.8 / 6
 export const scaled = (value) => value * SCALE
-export const TABLE_RADIUS = 0.6
-export const TABLE_THICKNESS = 0.01
-export const TABLE_TOP_HEIGHT = 1.5
+export const TABLE_RADIUS = 1.2
+export const TABLE_THICKNESS = 0.02
+export const TABLE_TOP_HEIGHT = 0.9
 export const JOINT_RADIUS = 0.035
 export const PLATE_HEIGHT = TABLE_TOP_HEIGHT - TABLE_THICKNESS / 2
 // Ball top is tangent to the plate underside, also while the plate rotates.
