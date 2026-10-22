@@ -1,0 +1,32 @@
+{
+  "name": "threejs-project",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:mobile": "node scripts/validate-mobile-gravity.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "build:pages": "vite build --mode pages",
+    "preview": "vite preview",
+    "test:physics": "node scripts/validate-physics.mjs",
+    "test:mouse": "node scripts/validate-mouse-gravity.mjs",
+    "test:view": "node scripts/validate-view-gizmo.mjs",
+    "test:dome": "node scripts/validate-dome.mjs",
+    "test:dome-stress": "node scripts/stress-dome.mjs",
+    "test:profile": "node scripts/validate-profile-cup.mjs",
+    "test:dishes": "node scripts/validate-dishes.mjs",
+    "test:breath": "node scripts/validate-breath.mjs",
+    "test:breath-recorder": "node scripts/validate-breath-recorder.mjs",
+    "test:drop": "node scripts/validate-sculpture-drop.mjs",
+    "test:drop-collision": "node scripts/validate-drop-collision.mjs"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.21.0",
+    "lil-gui": "^0.21.0",
+    "three": "^0.186.1"
+  }
+}
